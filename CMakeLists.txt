@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.15)
 
 project(FluentHttpPP)
 
+option(USE_STATIC_LINKING "Use static linking for the runtime" ON)
+
 if (USE_STATIC_LINKING)
     if (MSVC)
         # MSVC specific static linking flag
